@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CountrySearch</title>
+	 <link rel="stylesheet" href="index.css">
+	 <!-- Only used for search icon -->
+   	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+<body>
+  <h1>CountrySearch </h1>
+ 	  	<div class="search-container">
+	         <input class="searchInput"type="text" placeholder="Search Country.." name="search" onchange="myfunc(this.value)">
+	            <button class="searchButton">
+	                <i class="fa fa-search"></i>
+	            </button>
+	  	</div>
+   <div id="cards">
+   	<!-- All the fetched countries in card format are displayed in this div -->
+   </div>
+</body>
+<!-- Javascript File to fetch the details -->
+<script src="indscript.js"></script>
+</html>

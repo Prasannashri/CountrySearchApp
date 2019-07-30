@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  background-image: url('https://images.unsplash.com/photo-1522100354738-4021bf8454db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-repeat:no-repeat;
+  background-size: cover;
+  }
+
+h1 {
+  color:white;
+  text-align: center;
+}
+.card {
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 16px 16px 0 rgba(255,255,255,0.2);
+}
+.card a:link,a:visited{
+  color: white;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card{
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   .card{
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   .card{
+    width: 46%;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   .card{
+    width: 29%;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   .card{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.search-container {
+    float: none;
+  }
+}
+#cards{
+      margin-top: 05%;
+      float: left;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-flow: wrap;
+      }
+      #card{
+        margin:1rem;
+      }
+     /* body{
+        background-image: url('https://images.unsplash.com/photo-1506422748879-887454f9cdff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+      }*/
+    .search-container 
+          {
+          position: absolute;
+          left: 50%;
+          transform:  translate(-50%,50%);
+          background: #2f3640;
+          height: 40px;
+          border-radius: 40px;
+          }
+
+.search-container:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-container:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 50px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.search-container:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
